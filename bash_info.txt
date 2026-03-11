@@ -1,0 +1,5 @@
+# scp for dropbear 
+tar -C /dev/shm -cf - genshin_audio | ssh -p 22011 root@10.144.99.240 "tar -C ~/VITS_TTS -xf -"
+
+# freeze with conda
+pip list --format=freeze > requirements.txt
